@@ -1,0 +1,550 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli:400,700&display=swap');
+
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+header#top {
+  max-width: 100vw;
+  height: 100vh;
+  background: url('../img/Illustration.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+#bt_menu{
+	display: none;
+}
+
+label[for='bt_menu']{
+	padding: 5px;
+	color:#1D164D;
+	text-align: center;
+	font-size: 40px;
+	cursor: pointer;
+	display: none;
+	width: 50px;
+  height: 50px;
+  position: fixed;
+}	
+
+header#top nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  height: 10vh;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+header#top nav h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #BADC58;
+  font-size: 2em;
+}
+
+header#top nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header#top nav ul li {
+  margin: 20px;
+}
+
+header#top nav ul li a {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+header#top nav ul li #btn-register {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: .3em;
+  color: #BADC58;
+}
+
+header#top nav ul li:hover {
+  text-decoration: underline;
+}
+
+/* Trecho com título e campo de busca */
+header section#new-recipe {
+  margin-left: 7%;
+  display: flex;
+}
+
+section#new-recipe article {
+  margin-top: 15%;
+}
+
+section#new-recipe article h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #1D164D;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  border: 1px solid #2D3561;
+  color: #B4B4B4;
+  font-size: 1.3em;
+  width: 50%;
+  border-radius: .3em;
+  padding: 10px;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #B4B4B4;
+  font-family: 'Muli', sans-serif;
+}
+
+form button {
+  background-color: #BADC58;
+  color: white;
+  font-size: 1.5em;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: .3em;
+  cursor: pointer
+}
+
+form button:hover {
+  background-color: rgb(173, 203, 86);
+}
+
+
+/* Trecho com pricipais receitas */
+section#best-recipes {
+  background: #FAFAFC;
+  text-align: center;
+  padding: 5% 7% 5% 7%;
+}
+
+section#best-recipes header {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+section#best-recipes h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #1D164D;
+}
+
+section#best-recipes p {
+  color: #9E9BAF;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+article#content-best-recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 50px;
+  margin-top: 3%;
+}
+
+div.block-best-recipes {
+  display: grid;
+  align-items: center ;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  background-color: transparent;
+  border-radius: .3em;
+  box-shadow: 0px 15px 20px rgba(112, 112, 112, .2);
+}
+
+div.block-best-recipes h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #1D164D;
+  margin-bottom: 20px;
+}
+
+a.btn {
+  background-color: #BADC58;
+  padding: 10px 20px;
+  border-radius: .3em;
+  font-family: 'Muli', sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+a.btn-blur {
+  box-shadow: 3px 10px 15px rgba(186, 220, 88, .4);
+}
+
+a.btn:hover {
+  background-color: rgb(173, 203, 86);
+}
+
+/* Best Services */
+section#best-services {
+  max-width: 100vw;
+  height: 100vh;
+  background: url('../img/bloco_services.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section#best-services article {
+  width: 50%;
+  height: 50%;
+}
+
+section#best-services h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #1D164D;
+  margin-bottom: 20px;
+}
+
+section#best-services p {
+  color: #BCBCBC;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 25px;
+}
+
+section#best-services p:nth-last-child(2) {
+  margin-bottom: 50px;
+}
+
+/* Posts do blog */
+section#blog {
+  background: #FAFAFC;
+  text-align: center;
+  padding: 5% 0 5% 7%;
+}
+
+section#blog header {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+section#blog h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #1D164D;
+}
+
+section#blog p {
+  color: #9E9BAF;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+div.block-blog {
+  display: inline-block;
+  border-radius: .5em;
+  box-shadow: 0px 15px 20px rgba(112, 112, 112, .2);
+  width: 25%;
+  margin: 20px;
+}
+
+div.block-blog img {
+  width: 100%;
+}
+
+div.block-blog div.block-blog-content {
+  padding: 20px;
+}
+
+div.block-blog div.block-blog-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: left;
+  color: #1D164D;
+  margin-bottom: 20px;
+}
+
+div.block-user {
+  display: flex;
+  align-items: center;
+}
+
+div.block-user div {
+  background-color: rgba(112, 112, 112, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+div.block-user p {
+  margin-left: 10px;
+}
+
+/* Seção com imagem de fundo e campo para email */
+section#join {
+  max-width: 100vw;
+  height: 100vh;
+  background: url('../img/bloco_final_image.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+section#join article {
+  margin-left: 7%;
+  display: flex;
+}
+
+section#join article h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #1D164D;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+section#join article div {
+  margin-top: 20%;
+}
+
+section#join article div a {
+  margin-left: 20px;
+}
+
+/* Rodapé da página */
+footer {
+  padding: 3% 7% 3% 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  color: #1D164D;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9E9BAF;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+  /* Configurações do menu hamburguer */
+  .menu {
+    margin-left: -100%;
+    transition: all .5s;
+  }
+
+  label[for='bt_menu']{
+    display: block;
+  }
+
+  #bt_menu:checked ~ .menu {
+    margin-left: 0;
+  }
+
+  header#top {
+    max-height: 80vh;
+  }
+
+  header#top nav {
+    display: block;
+    background: #fff;
+    height: 100vh;
+    top: 0;
+  }
+  
+  header#top nav h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  header#top nav ul {
+    list-style: none;
+    display: inline;
+  }
+  
+  header#top nav ul li {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+  }
+  
+  header#top nav ul li a {
+    color: #000;
+  }
+  
+  header#top nav ul li #btn-register {
+    background-color: #BADC58;
+    color: #ffffff;
+  }
+
+  /* Trecho com título e campo de busca */
+  header section#new-recipe {
+    margin-top: -110%;
+    padding: 5% 2% 5% 2%; 
+  }
+
+  section#new-recipe article {
+    margin-bottom: 5%;
+  }
+
+  section#new-recipe article h2 {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  /* Trecho com pricipais receitas */
+  section#best-recipes {
+    padding: 5% 2% 5% 2%;
+  }
+  
+  section#best-recipes header {
+    width: 100%; 
+  }
+  
+  article#content-best-recipes {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin-top: -10%;
+  }
+  
+  div.block-best-recipes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 75vh;
+    margin-top: -10%;
+    box-shadow: 0px 5px 10px rgba(112, 112, 112, .2);
+  }
+
+  div.block-best-recipes img {
+    width: 100%;
+  }
+  
+  div.block-best-recipes h3 {
+    margin-top: -90px;
+    font-size: 1.6em;
+  }
+
+
+  /* Best Services */
+  section#best-services { 
+    height: 80vh;
+    background: #fff;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  section#best-services article {
+    width: 100%;
+    height: 100%;
+  }
+
+  section#best-services h3 {
+    font-size: 1.6em;
+  }
+
+
+  /* Posts do blog */
+  section#blog {
+    padding:0;
+  }
+
+  section#blog header {
+    width: 100%;
+  }
+
+  article#content-blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  div.block-blog {
+    border-radius: .5em;
+    box-shadow: 0px 15px 20px rgba(112, 112, 112, .2);
+    width: 90%;
+  }
+
+
+  /* Seção com imagem de fundo e campo para email */
+  section#join {
+    background-position: bottom right;
+    height: 90vh;
+  }
+
+  section#join article {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -5%;
+  }
+
+  section#join article h2 {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* Rodapé da página */
+  footer {
+    padding: 0% 2% 0% 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    text-align: center;
+  }
+}
