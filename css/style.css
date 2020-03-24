@@ -479,7 +479,7 @@ nav ul li a {
 
   /* Best Services */
   section#best-services { 
-    height: 85vh;
+    height: 50vh;
     background: #fff;
     padding-left: 2%;
     padding-right: 2%;
@@ -506,12 +506,6 @@ nav ul li a {
     width: 100%;
   }
 
-  article#content-blog {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-  }
-
   div.block-blog {
     border-radius: .5em;
     box-shadow: 0px 15px 20px rgba(112, 112, 112, .2);
@@ -522,7 +516,7 @@ nav ul li a {
   /* Seção com imagem de fundo e campo para email */
   section#join {
     background-position: bottom right;
-    height: 90vh;
+    height: 100vh;
   }
 
   section#join article {
@@ -536,15 +530,27 @@ nav ul li a {
     width: 100%;
     text-align: center;
   }
+}
 
 
-  /* Rodapé da página */
-  footer {
+@media screen and (max-width: 480px) {
+  section#best-services { 
+    height: 80vh;
+  }
+
+  /* Posts do blog */
+  section#blog {
     padding: 2% 2% 2% 2%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    text-align: center;
-    font-size: 1em;
+    height: 90vh;
+  }
+
+  section#blog header {
+    width: 100%;
+  }
+
+  /* Seção com imagem de fundo e campo para email */
+  section#join {
+    background-position: bottom right;
+    height: 100vh;
   }
 }
