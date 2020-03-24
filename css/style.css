@@ -462,7 +462,7 @@ nav ul li a {
   div.block-best-recipes {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 75vh;
+    height: 80vh;
     margin-top: -10%;
     box-shadow: 0px 5px 10px rgba(112, 112, 112, .2);
   }
@@ -472,14 +472,14 @@ nav ul li a {
   }
   
   div.block-best-recipes h3 {
-    margin-top: -90px;
-    font-size: 1.6em;
+    margin-top: -100px;
+    font-size: 1.5em;
   }
 
 
   /* Best Services */
   section#best-services { 
-    height: 80vh;
+    height: 85vh;
     background: #fff;
     padding-left: 2%;
     padding-right: 2%;
@@ -540,10 +540,11 @@ nav ul li a {
 
   /* Rodapé da página */
   footer {
-    padding: 0% 2% 0% 2%;
+    padding: 2% 2% 2% 2%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     text-align: center;
+    font-size: 1em;
   }
 }
